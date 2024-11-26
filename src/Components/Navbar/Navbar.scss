@@ -1,0 +1,109 @@
+  
+.navbar-container {
+    background-color: rgb(91 124 187);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 30px;
+    filter: blur(0px);
+    transition: filter 2s ease-in-out;     
+    /* transition: background-color 1s ease-in-out;      */
+}  
+
+.blur {
+    filter: blur(5px);
+    transition: all 2s ease-in-out;
+}
+
+.navbar-scrolled {
+    position: sticky;
+    top: 0;
+    padding: 2px 50px 2px 30px;
+    color: black;
+    z-index: 10;
+    background-color: rgba(91,124,187,0.87);
+    backdrop-filter: blur(3px);
+}
+
+.sidebar-svg-container {
+    display: none;
+}
+
+.navbar-center-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.navbar-logo {
+    object-fit: contain;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.logo-scrolled {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.navbar-p {
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+    word-spacing: 3px;
+    position: relative;
+}
+
+.navbar-p::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform-origin: right bottom;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+    border-radius: 10px;
+    z-index: 20;
+}
+
+.navbar-p:hover::after {
+    transform: scaleX(1);
+  transform-origin: left bottom;
+  transition: transform 0.3s linear;
+}
+
+.logo-p-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-p{
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+}
+
+.logo-p-scrolled {
+    font-size: 27px;
+}
+
+.navbar-p-scrolled {
+    font-size: 17px;
+}
+
+.header-bottom-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 0 20px;
+}

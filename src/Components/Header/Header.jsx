@@ -7,7 +7,7 @@ const Header = () => {
             <div className="header-container  center-tablet dark overlay-hero">
                 <div className="header-content-container">
                     <div className="header-info-container">
-                        <h1 className="header-title"> Emlak Zone İle Yeni Bir Hayatın Kapılarını Aralayın! </h1>
+                        <h1 className="header-title"> Emlakçım İle Yeni Bir Hayatın Kapılarını Aralayın! </h1>
                         <p className="header-p"> Uzman kadromuz ve geniş ev kataloğumuz ile modern yaşam alanlarını ve fark yaratan
                             tasarımları keşfedin. </p>
                         <button className="header-button">
