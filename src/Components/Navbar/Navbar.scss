@@ -7,28 +7,29 @@
       background-color: rgba(91, 124, 187, 0.87);
       backdrop-filter: blur(3px);
 
-      
+
       .logo-scrolled {
-        max-width: 50px;
-        max-height: 50px;
-    }
+          max-width: 50px;
+          max-height: 50px;
+      }
 
-    
-    .logo-p-scrolled {
-        font-size: 27px;
-    }
 
-    .navbar-p-scrolled {
-        font-size: 17px;
-    }
+      .logo-p-scrolled {
+          font-size: 27px;
+      }
+
+      .navbar-p-scrolled {
+          font-size: 17px;
+      }
   }
 
   .navbar-container {
-      background-color: #5b7cbb;
+    //   background-color: #5b7cbb;
       // #62769c güzel renk
       display: flex;
       justify-content: space-between;
       align-items: center;
+      z-index: 10;
       padding: 20px 50px 20px 40px;
       filter: blur(0px);
       transition: filter 2s ease-in-out;
@@ -117,5 +118,60 @@
           align-items: center;
           gap: 120px;
           padding: 0 20px;
+      }
+  }
+
+
+  @media(max-width:1050px) {
+      .navbar-container {
+          .navbar-center-content {
+              display: none;
+          }
+
+          .sidebar-svg-container {
+            display: block;
+            cursor: pointer;
+        }
+      }
+  }
+
+  @media(max-width:680px) {
+      .navbar-p {
+          display: none;
+      }
+  }
+
+  @media(max-width:550px) {
+      .header-bottom-img {
+          max-width: 100%;
+          height: 300px;
+      }
+
+      .sidebar-p {
+          font-size: 17px;
+      }
+
+      .sidebar-content {
+          padding: 0 30px;
+      }
+
+      .navbar-container {
+          padding: 20px;
+      }
+  }
+
+  @media(max-width:470px) {
+
+      .logo-p-container {
+          gap: 10px;
+      }
+
+      .logo-p {
+          font-size: 25px;
+      }
+
+      .navbar-logo {
+          max-width: 60px;
+          max-height: 60px;
       }
   }
