@@ -1,10 +1,10 @@
 .header-container {
-    background: linear-gradient(0deg, rgba(2, 48, 71, 1) 32%, rgb(91 124 187) 100%);
+    background: linear-gradient(0deg, #023047 32%, #5b7cbb 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 90px 20px 90px 20px;
+    padding: 50px 20px 90px 20px;
 
 
     .header-content-container {
@@ -12,7 +12,6 @@
         gap: 70px 75px;
         flex-wrap: wrap;
         justify-content: center;
-
 
         .header-img {
             object-fit: cover;
@@ -44,6 +43,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-bottom: 50px;
         }
 
         .header-button {
