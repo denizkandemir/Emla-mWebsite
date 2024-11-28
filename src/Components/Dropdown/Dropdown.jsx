@@ -1,17 +1,17 @@
 import "./Dropdown.scss";
 
-const Dropdown = ({background,height,setSelect,objects,setDropDownOpen}) => {
+const Dropdown = ({color,background,height,setSelect,select,objects,setDropDownOpen,index}) => {
 
     const selectObject = (name) => {
-        setSelect(name);
-        setDropDownOpen(false);
+        setSelect(select.map((item, i) => (i === index ? name : item)));
+        setDropDownOpen("");
     }
 
     return (
-      <div className="dropdown-container" >
+      <div className="dropdown-container" style={{height:height,background:background }}>
         {
             objects.map((object)=> (
-                <p onClick={() => selectObject(object.name)} className="dropdown-p" key={object.id}> {object.name} </p>
+                <p style={{color:color}} onClick={() => selectObject(object.name)} className="dropdown-p" key={object.id}> {object.name} </p>
             ))
         }
       </div>
