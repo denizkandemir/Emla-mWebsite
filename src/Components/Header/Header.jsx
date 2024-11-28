@@ -20,17 +20,11 @@ const Header = () => {
                             <a href="" className="header-link"> Keşfet </a>
                         </button> */}
                         <Search/>
-                    </div>
-                    {/* <div className="header-img-container">
-                        <img src={houseImg} className="header-img" alt="Hero Illustration" />
-                    </div> */}
-                    
+                    </div>  
                 </div>
-              
                 <div className="header-background-container">
                     <img src={background1} className="header-background" alt="" />
                 </div>
-
             </div>
         </>
     )
