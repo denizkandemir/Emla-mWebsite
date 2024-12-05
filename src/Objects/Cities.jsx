@@ -1,7 +1,7 @@
-[
+const cities  = [
   {
     "id": 1,
-    "city": "Adana",
+    "name": "Adana",
     "towns": [
       { "id": 101, "name": "Aladağ" },
       { "id": 102, "name": "Ceyhan" },
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "city": "Adıyaman",
+    "name": "Adıyaman",
     "towns": [
       { "id": 201, "name": "Besni" },
       { "id": 202, "name": "Çelikhan" },
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "city": "Afyonkarahisar",
+    "name": "Afyonkarahisar",
     "towns": [
       { "id": 301, "name": "Başmakçı" },
       { "id": 302, "name": "Bayat" },
@@ -61,7 +61,7 @@
   },
   {
     "id": 4,
-    "city": "Aksaray",
+    "name": "Aksaray",
     "towns": [
       { "id": 401, "name": "Ağaçören" },
       { "id": 402, "name": "Güzelyurt" },
@@ -75,7 +75,7 @@
   },
   {
     "id": 5,
-    "city": "Amasya",
+    "name": "Amasya",
     "towns": [
       { "id": 501, "name": "Göynücek" },
       { "id": 502, "name": "Hamamözü" },
@@ -87,7 +87,7 @@
   },
   {
     "id": 6,
-    "city": "Ankara",
+    "name": "Ankara",
     "towns": [
       { "id": 601, "name": "Altındağ" },
       { "id": 602, "name": "Ayaş" },
@@ -111,7 +111,7 @@
   },
   {
     "id": 7,
-    "city": "Antalya",
+    "name": "Antalya",
     "towns": [
       { "id": 701, "name": "Akseki" },
       { "id": 702, "name": "Alanya" },
@@ -133,7 +133,7 @@
   },
   {
     "id": 8,
-    "city": "Artvin",
+    "name": "Artvin",
     "towns": [
       { "id": 801, "name": "Ardanuç" },
       { "id": 802, "name": "Arhavi" },
@@ -147,7 +147,7 @@
   },
   {
     "id": 9,
-    "city": "Balıkesir",
+    "name": "Balıkesir",
     "towns": [
       { "id": 901, "name": "Altıeylül" },
       { "id": 902, "name": "Ayvalık" },
@@ -168,7 +168,7 @@
   },
   {
     "id": 10,
-    "city": "Bilecik",
+    "name": "Bilecik",
     "towns": [
       { "id": 1001, "name": "İnhisar" },
       { "id": 1002, "name": "Bozüyük" },
@@ -183,7 +183,7 @@
 
   {
     "id": 11,
-    "city": "Bingöl",
+    "name": "Bingöl",
     "towns": [
       { "id": 1101, "name": "Adaklı" },
       { "id": 1102, "name": "Genç" },
@@ -196,7 +196,7 @@
   },
   {
     "id": 12,
-    "city": "Bitlis",
+    "name": "Bitlis",
     "towns": [
       { "id": 1201, "name": "Adilcevaz" },
       { "id": 1202, "name": "Ahlat" },
@@ -209,7 +209,7 @@
   },
   {
     "id": 13,
-    "city": "Bolu",
+    "name": "Bolu",
     "towns": [
       { "id": 1301, "name": "Gerede" },
       { "id": 1302, "name": "Göynük" },
@@ -222,7 +222,7 @@
   },
   {
     "id": 14,
-    "city": "Burdur",
+    "name": "Burdur",
     "towns": [
       { "id": 1401, "name": "Ağlasun" },
       { "id": 1402, "name": "Altınyayla" },
@@ -238,7 +238,7 @@
   },
   {
     "id": 15,
-    "city": "Çanakkale",
+    "name": "Çanakkale",
     "towns": [
       { "id": 1501, "name": "Ayvacık" },
       { "id": 1502, "name": "Bayramiç" },
@@ -254,7 +254,7 @@
   },
   {
     "id": 16,
-    "city": "Çorum",
+    "name": "Çorum",
     "towns": [
       { "id": 1601, "name": "Alaca" },
       { "id": 1602, "name": "Bayat" },
@@ -271,7 +271,7 @@
   },
   {
     "id": 17,
-    "city": "Denizli",
+    "name": "Denizli",
     "towns": [
       { "id": 1701, "name": "Acıpayam" },
       { "id": 1702, "name": "Babadağ" },
@@ -290,7 +290,7 @@
   },
   {
     "id": 18,
-    "city": "Diyarbakır",
+    "name": "Diyarbakır",
     "towns": [
       { "id": 1801, "name": "Bağlar" },
       { "id": 1802, "name": "Bismil" },
@@ -309,7 +309,7 @@
   },
   {
     "id": 19,
-    "city": "Edirne",
+    "name": "Edirne",
     "towns": [
       { "id": 1901, "name": "Enez" },
       { "id": 1902, "name": "Havsa" },
@@ -323,7 +323,7 @@
   },
   {
     "id": 20,
-    "city": "Elazığ",
+    "name": "Elazığ",
     "towns": [
       { "id": 2001, "name": "Ağın" },
       { "id": 2002, "name": "Alacakaya" },
@@ -341,7 +341,7 @@
 
   {
     "id": 21,
-    "city": "Erzincan",
+    "name": "Erzincan",
     "towns": [
       { "id": 2101, "name": "Erzincan Merkez" },
       { "id": 2102, "name": "Çayırlı" },
@@ -356,7 +356,7 @@
   },
   {
     "id": 22,
-    "city": "Erzurum",
+    "name": "Erzurum",
     "towns": [
       { "id": 2201, "name": "Aşkale" },
       { "id": 2202, "name": "Aziziye" },
@@ -377,7 +377,7 @@
   },
   {
     "id": 23,
-    "city": "Eskişehir",
+    "name": "Eskişehir",
     "towns": [
       { "id": 2301, "name": "Alpu" },
       { "id": 2302, "name": "Çifteler" },
@@ -394,7 +394,7 @@
   },
   {
     "id": 24,
-    "city": "Gaziantep",
+    "name": "Gaziantep",
     "towns": [
       { "id": 2401, "name": "Şahinbey" },
       { "id": 2402, "name": "Şehitkamil" },
@@ -407,7 +407,7 @@
   },
   {
     "id": 25,
-    "city": "Giresun",
+    "name": "Giresun",
     "towns": [
       { "id": 2501, "name": "Alucra" },
       { "id": 2502, "name": "Bulancak" },
@@ -425,7 +425,7 @@
   },
   {
     "id": 26,
-    "city": "Gümüşhane",
+    "name": "Gümüşhane",
     "towns": [
       { "id": 2601, "name": "Kürtün" },
       { "id": 2602, "name": "Kelkit" },
@@ -436,7 +436,7 @@
   },
   {
     "id": 27,
-    "city": "Hakkari",
+    "name": "Hakkari",
     "towns": [
       { "id": 2701, "name": "Çukurca" },
       { "id": 2702, "name": "Düziçi" },
@@ -447,7 +447,7 @@
   },
   {
     "id": 28,
-    "city": "Hatay",
+    "name": "Hatay",
     "towns": [
       { "id": 2801, "name": "Antakya" },
       { "id": 2802, "name": "Defne" },
@@ -464,7 +464,7 @@
   },
   {
     "id": 29,
-    "city": "Iğdır",
+    "name": "Iğdır",
     "towns": [
       { "id": 2901, "name": "Iğdır Merkez" },
       { "id": 2902, "name": "Aralık" },
@@ -473,7 +473,7 @@
   },
   {
     "id": 30,
-    "city": "İstanbul",
+    "name": "İstanbul",
     "towns": [
       { "id": 3001, "name": "Adalar" },
       { "id": 3002, "name": "Arnavutköy" },
@@ -516,7 +516,7 @@
 
   {
     "id": 31,
-    "city": "İzmir",
+    "name": "İzmir",
     "towns": [
       { "id": 3101, "name": "Aliağa" },
       { "id": 3102, "name": "Bayındır" },
@@ -548,7 +548,7 @@
   },
   {
     "id": 32,
-    "city": "Kahramanmaraş",
+    "name": "Kahramanmaraş",
     "towns": [
       { "id": 3201, "name": "Afşin" },
       { "id": 3202, "name": "Andırın" },
@@ -563,7 +563,7 @@
   },
   {
     "id": 33,
-    "city": "Karabük",
+    "name": "Karabük",
     "towns": [
       { "id": 3301, "name": "Eskipazar" },
       { "id": 3302, "name": "Karabük Merkez" },
@@ -574,7 +574,7 @@
   },
   {
     "id": 34,
-    "city": "Karaman",
+    "name": "Karaman",
     "towns": [
       { "id": 3401, "name": "Ayrancı" },
       { "id": 3402, "name": "Başyayla" },
@@ -588,7 +588,7 @@
   },
   {
     "id": 35,
-    "city": "Kars",
+    "name": "Kars",
     "towns": [
       { "id": 3501, "name": "Akyaka" },
       { "id": 3502, "name": "Ardahan" },
@@ -602,7 +602,7 @@
   },
   {
     "id": 36,
-    "city": "Kastamonu",
+    "name": "Kastamonu",
     "towns": [
       { "id": 3601, "name": "Araç" },
       { "id": 3602, "name": "Azdavay" },
@@ -623,7 +623,7 @@
   },
   {
     "id": 37,
-    "city": "Kayseri",
+    "name": "Kayseri",
     "towns": [
       { "id": 3701, "name": "Akkışla" },
       { "id": 3702, "name": "Bünyan" },
@@ -640,7 +640,7 @@
   },
   {
     "id": 38,
-    "city": "Kırıkkale",
+    "name": "Kırıkkale",
     "towns": [
       { "id": 3801, "name": "Balışeyh" },
       { "id": 3802, "name": "Delice" },
@@ -652,7 +652,7 @@
   },
   {
     "id": 39,
-    "city": "Kırklareli",
+    "name": "Kırklareli",
     "towns": [
       { "id": 3901, "name": "Pınarhisar" },
       { "id": 3902, "name": "Lüleburgaz" },
@@ -663,7 +663,7 @@
   },
   {
     "id": 40,
-    "city": "Kocaeli",
+    "name": "Kocaeli",
     "towns": [
       { "id": 4001, "name": "Başiskele" },
       { "id": 4002, "name": "Çayırova" },
@@ -679,7 +679,7 @@
   },
   {
     "id": 41,
-    "city": "Konya",
+    "name": "Konya",
     "towns": [
       {"id": 4101, "name": "Akşehir"},
       {"id": 4102, "name": "Altınekin"},
@@ -702,7 +702,7 @@
   },
   {
     "id": 42,
-    "city": "Kütahya",
+    "name": "Kütahya",
     "towns": [
       {"id": 4201, "name": "Aslanapa"},
       {"id": 4202, "name": "Çavdarhisar"},
@@ -718,7 +718,7 @@
   },
   {
     "id": 43,
-    "city": "Malatya",
+    "name": "Malatya",
     "towns": [
       {"id": 4301, "name": "Akçadağ"},
       {"id": 4302, "name": "Arapgir"},
@@ -735,7 +735,7 @@
   },
   {
     "id": 44,
-    "city": "Manisa",
+    "name": "Manisa",
     "towns": [
       {"id": 4401, "name": "Ahmetli"},
       {"id": 4402, "name": "Akhisar"},
@@ -752,7 +752,7 @@
   },
   {
     "id": 45,
-    "city": "Mardin",
+    "name": "Mardin",
     "towns": [
       {"id": 4501, "name": "Artuklu"},
       {"id": 4502, "name": "Derik"},
@@ -768,7 +768,7 @@
   },
   {
     "id": 46,
-    "city": "Mersin",
+    "name": "Mersin",
     "towns": [
       {"id": 4601, "name": "Akdeniz"},
       {"id": 4602, "name": "Anamur"},
@@ -784,7 +784,7 @@
   },
   {
     "id": 47,
-    "city": "Muğla",
+    "name": "Muğla",
     "towns": [
       {"id": 4701, "name": "Bodrum"},
       {"id": 4702, "name": "Dalaman"},
@@ -801,7 +801,7 @@
   },
   {
     "id": 48,
-    "city": "Nevşehir",
+    "name": "Nevşehir",
     "towns": [
       {"id": 4801, "name": "Avanos"},
       {"id": 4802, "name": "Derinkuyu"},
@@ -815,7 +815,7 @@
   },
   {
     "id": 49,
-    "city": "Niğde",
+    "name": "Niğde",
     "towns": [
       {"id": 4901, "name": "Bor"},
       {"id": 4902, "name": "Çiftlik"},
@@ -825,7 +825,7 @@
   },
   {
     "id": 50,
-    "city": "Ordu",
+    "name": "Ordu",
     "towns": [
       {"id": 5001, "name": "Akkuş"},
       {"id": 5002, "name": "Altınordu"},
@@ -846,7 +846,7 @@
   },
   {
     "id": 51,
-    "city": "Osmaniye",
+    "name": "Osmaniye",
     "towns": [
       {"id": 5101, "name": "Bahçe"},
       {"id": 5102, "name": "Düziçi"},
@@ -858,7 +858,7 @@
   },
   {
     "id": 52,
-    "city": "Rize",
+    "name": "Rize",
     "towns": [
       {"id": 5201, "name": "Ardeşen"},
       {"id": 5202, "name": "Çamlıhemşin"},
@@ -875,7 +875,7 @@
   },
   {
     "id": 53,
-    "city": "Sakarya",
+    "name": "Sakarya",
     "towns": [
       {"id": 5301, "name": "Adapazarı"},
       {"id": 5302, "name": "Akyazı"},
@@ -893,7 +893,7 @@
   },
   {
     "id": 54,
-    "city": "Samsun",
+    "name": "Samsun",
     "towns": [
       {"id": 5401, "name": "Atakum"},
       {"id": 5402, "name": "Bafra"},
@@ -909,7 +909,7 @@
   },
   {
     "id": 55,
-    "city": "Şanlıurfa",
+    "name": "Şanlıurfa",
     "towns": [
       {"id": 5501, "name": "Akçakale"},
       {"id": 5502, "name": "Birecik"},
@@ -925,7 +925,7 @@
   },
   {
     "id": 56,
-    "city": "Siirt",
+    "name": "Siirt",
     "towns": [
       {"id": 5601, "name": "Baykan"},
       {"id": 5602, "name": "Eruh"},
@@ -936,7 +936,7 @@
   },
   {
     "id": 57,
-    "city": "Sinop",
+    "name": "Sinop",
     "towns": [
       {"id": 5701, "name": "Ayancık"},
       {"id": 5702, "name": "Boyabat"},
@@ -950,7 +950,7 @@
   },
   {
     "id": 58,
-    "city": "Sivas",
+    "name": "Sivas",
     "towns": [
       {"id": 5801, "name": "Akıncılar"},
       {"id": 5802, "name": "Altınyayla"},
@@ -968,7 +968,7 @@
   },
   {
     "id": 59,
-    "city": "Tekirdağ",
+    "name": "Tekirdağ",
     "towns": [
       {"id": 5901, "name": "Çerkezköy"},
       {"id": 5902, "name": "Çorlu"},
@@ -981,7 +981,7 @@
   },
   {
     "id": 60,
-    "city": "Tokat",
+    "name": "Tokat",
     "towns": [
       {"id": 6001, "name": "Artova"},
       {"id": 6002, "name": "Başçiftlik"},
@@ -994,7 +994,7 @@
   },
   {
     "id": 61,
-    "city": "Trabzon",
+    "name": "Trabzon",
     "towns": [
       {"id": 6101, "name": "Akçaabat"},
       {"id": 6102, "name": "Araklı"},
@@ -1016,7 +1016,7 @@
 
   {
     "id": 62,
-    "city": "Tunceli",
+    "name": "Tunceli",
     "towns": [
       {"id": 6201, "name": "Çemişgezek"},
       {"id": 6202, "name": "Hozat"},
@@ -1029,7 +1029,7 @@
   },
   {
     "id": 63,
-    "city": "Uşak",
+    "name": "Uşak",
     "towns": [
       {"id": 6301, "name": "Banaz"},
       {"id": 6302, "name": "Eşme"},
@@ -1040,7 +1040,7 @@
   },
   {
     "id": 64,
-    "city": "Van",
+    "name": "Van",
     "towns": [
       {"id": 6401, "name": "Çaldıran"},
       {"id": 6402, "name": "Çatak"},
@@ -1056,7 +1056,7 @@
   },
   {
     "id": 65,
-    "city": "Yalova",
+    "name": "Yalova",
     "towns": [
       {"id": 6501, "name": "Altınova"},
       {"id": 6502, "name": "Armutlu"},
@@ -1068,7 +1068,7 @@
   },
   {
     "id": 66,
-    "city": "Yozgat",
+    "name": "Yozgat",
     "towns": [
       {"id": 6601, "name": "Akdağmadeni"},
       {"id": 6602, "name": "Aydıncık"},
@@ -1083,7 +1083,7 @@
   },
   {
     "id": 67,
-    "city": "Zonguldak",
+    "name": "Zonguldak",
     "towns": [
       {"id": 6701, "name": "Alaplı"},
       {"id": 6702, "name": "Çaycuma"},
@@ -1096,7 +1096,7 @@
   },
   {
     "id": 68,
-    "city": "Aksaray",
+    "name": "Aksaray",
     "towns": [
       {"id": 6801, "name": "Ağaçören"},
       {"id": 6802, "name": "Güzelyurt"},
@@ -1107,7 +1107,7 @@
   },
   {
     "id": 69,
-    "city": "Karaman",
+    "name": "Karaman",
     "towns": [
       {"id": 6901, "name": "Ağaçören"},
       {"id": 6902, "name": "Başyayla"},
@@ -1119,7 +1119,7 @@
   },
   {
     "id": 70,
-    "city": "Kırıkkale",
+    "name": "Kırıkkale",
     "towns": [
       {"id": 7001, "name": "Bahşili"},
       {"id": 7002, "name": "Delice"},
@@ -1134,7 +1134,7 @@
 
   {
     "id": 71,
-    "city": "Kırklareli",
+    "name": "Kırklareli",
     "towns": [
       {"id": 7101, "name": "Demirköy"},
       {"id": 7102, "name": "Kofçaz"},
@@ -1147,7 +1147,7 @@
   },
   {
     "id": 72,
-    "city": "Mardin",
+    "name": "Mardin",
     "towns": [
       {"id": 7201, "name": "Artuklu"},
       {"id": 7202, "name": "Dargeçit"},
@@ -1163,7 +1163,7 @@
   },
   {
     "id": 73,
-    "city": "Muğla",
+    "name": "Muğla",
     "towns": [
       {"id": 7301, "name": "Bodrum"},
       {"id": 7302, "name": "Fethiye"},
@@ -1178,7 +1178,7 @@
   },
   {
     "id": 74,
-    "city": "Muş",
+    "name": "Muş",
     "towns": [
       {"id": 7401, "name": "Bulanık"},
       {"id": 7402, "name": "Malazgirt"},
@@ -1188,7 +1188,7 @@
   },
   {
     "id": 75,
-    "city": "Nevşehir",
+    "name": "Nevşehir",
     "towns": [
       {"id": 7501, "name": "Avanos"},
       {"id": 7502, "name": "Derinkuyu"},
@@ -1203,7 +1203,7 @@
   },
   {
     "id": 76,
-    "city": "Niğde",
+    "name": "Niğde",
     "towns": [
       {"id": 7601, "name": "Altunhisar"},
       {"id": 7602, "name": "Bor"},
@@ -1214,7 +1214,7 @@
   },
   {
     "id": 77,
-    "city": "Osmaniye",
+    "name": "Osmaniye",
     "towns": [
       {"id": 7701, "name": "Bahçe"},
       {"id": 7702, "name": "Düziçi"},
@@ -1226,7 +1226,7 @@
   },
   {
     "id": 78,
-    "city": "Rize",
+    "name": "Rize",
     "towns": [
       {"id": 7801, "name": "Ardeşen"},
       {"id": 7802, "name": "Çamlıhemşin"},
@@ -1243,7 +1243,7 @@
   },
   {
     "id": 79,
-    "city": "Sakarya",
+    "name": "Sakarya",
     "towns": [
       {"id": 7901, "name": "Adapazarı"},
       {"id": 7902, "name": "Akyazı"},
@@ -1261,7 +1261,7 @@
   },
   {
     "id": 80,
-    "city": "Samsun",
+    "name": "Samsun",
     "towns": [
       {"id": 8001, "name": "Atakum"},
       {"id": 8002, "name": "Bafra"},
@@ -1277,7 +1277,7 @@
   },
   {
     "id": 81,
-    "city": "Şanlıurfa",
+    "name": "Şanlıurfa",
     "towns": [
       {"id": 8101, "name": "Akçakale"},
       {"id": 8102, "name": "Birecik"},
@@ -1292,3 +1292,5 @@
     ]
   }
 ]
+
+export default cities;

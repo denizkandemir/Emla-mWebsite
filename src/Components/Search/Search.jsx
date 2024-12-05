@@ -3,16 +3,40 @@ import houseType from "../../Objects/HouseType";
 import downArrow from "/down-arrow.png"
 import "./Search.scss"
 import { useState } from "react";
-import Dropdown from "../Dropdown/Dropdown";
+import SearchDropdown from "../Dropdowns/SearchDropdown/SearchDropdown";
+import CitiesDropdown from "../Dropdowns/CityDropdown/CitiesDropdown";
+import { useRef,useEffect } from "react";
 
 const Search = () => {
 
-    const [select, setSelect] = useState(["Şehir", "Konut", "Satılık"]);
+    const [select, setSelect] = useState([["Şehir"], ["Konut"], ["Satılık"]]);
     const [openDropdown, setDropdownOpen] = useState("");
 
     const selectedDropdown = (selected) => {
         setDropdownOpen(selected);
     }
+
+    const dropdownRef1 = useRef(null);
+    const dropdownRef2 = useRef(null);
+    const dropdownRef3 = useRef(null);
+
+    const handleClickOutside = (event) => {
+        if (
+          (dropdownRef1.current && !dropdownRef1.current.contains(event.target)) &&
+          (dropdownRef2.current && !dropdownRef2.current.contains(event.target)) &&
+          (dropdownRef3.current && !dropdownRef3.current.contains(event.target))
+        ) {
+          setDropdownOpen(""); 
+        }
+      };
+  
+    useEffect(() => {
+      document.addEventListener("mousedown", handleClickOutside);
+  
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, []);
 
     return (
         <div className="search-container">
@@ -25,8 +49,8 @@ const Search = () => {
                             </div>
                             <img src={downArrow} className="dropdown-icon" alt="" />
                         </div>
-                        <div className={openDropdown === "dropdown1" ? "open-dropdown-div" : "close-dropdown-div"}>
-                            <Dropdown setSelect={setSelect} height={"120px"} setDropDownOpen={setDropdownOpen} select={select} index={0} objects={cities} />
+                        <div ref={dropdownRef1} className={openDropdown === "dropdown1" ? "open-dropdown-div" : "close-dropdown-div"}>
+                            
                         </div>
                     </div>
                     <div className="select-dropdown-container">
@@ -36,8 +60,8 @@ const Search = () => {
                             </div>
                             <img src={downArrow} className="dropdown-icon" alt="" />
                         </div>
-                        <div className={openDropdown === "dropdown2" ? "open-dropdown-div" : "close-dropdown-div"}>
-                            <Dropdown setSelect={setSelect} height={"120px"} setDropDownOpen={setDropdownOpen} select={select} index={1} objects={houseType} />
+                        <div ref={dropdownRef2} className={openDropdown === "dropdown2" ? "open-dropdown-div" : "close-dropdown-div"}>
+                            <SearchDropdown  setSelect={setSelect} height={"120px"} setDropDownOpen={setDropdownOpen} select={select} index={1} objects={houseType} />
                         </div>
                     </div>
                     <div className="select-dropdown-container">
@@ -47,8 +71,8 @@ const Search = () => {
                             </div>
                             <img src={downArrow} className="dropdown-icon" alt="" />
                         </div>
-                        <div className={openDropdown === "dropdown3" ? "open-dropdown-div" : "close-dropdown-div"}>
-                            <Dropdown setSelect={setSelect} setDropDownOpen={setDropdownOpen} select={select} index={2} objects={[{ name: "Satılık", id: 1 }, { name: "Kiralık", id: 2 }]} />
+                        <div ref={dropdownRef3} className={openDropdown === "dropdown3" ? "open-dropdown-div" : "close-dropdown-div"}>
+                            <SearchDropdown  setSelect={setSelect} setDropDownOpen={setDropdownOpen} select={select} index={2} objects={[{ name: "Satılık", id: 1 }, { name: "Kiralık", id: 2 }]} />
                         </div>
                     </div>
                 </div>
