@@ -1,0 +1,81 @@
+@import  "./src/styles/variables";
+
+.dropdown-container {
+  box-shadow: $dropdown-box-shadow;
+  width: 180px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: scroll;
+
+  .dropdown-p{
+    font-weight: 500;
+    font-family: $primary-font;
+    cursor: pointer;
+  }
+}
+
+
+.dropdown-container::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 4px solid transparent;
+    border-radius: 13px;
+    background-clip: padding-box;
+}
+
+.dropdown-container::-webkit-scrollbar {
+    width: 10.5px;
+}
+
+.check-p-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-svg-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.styled-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 2px solid #555;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.styled-checkbox:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.styled-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.styled-checkbox:focus {
+  box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.5);
+}
